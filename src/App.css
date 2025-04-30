@@ -1,0 +1,30 @@
+/* Section styling */
+section {
+  padding: 4rem 0;
+}
+
+/* Card hover effect (global) */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Image ratio fix */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}

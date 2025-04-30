@@ -1,0 +1,97 @@
+/* CategoriesSlider.css */
+
+.category-slider {
+  position: relative;
+}
+
+.custom-nav-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+/* Card bo góc + hover đẹp */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.category-card-img {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-card-img {
+  transform: scale(1.05);
+}
+
+.nav-position {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  left: -20px;
+}
+
+.nav-right {
+  right: -20px;
+}
+
+/* Responsive cho mobile - có thể ẩn hoặc đưa gần lại */
+@media (max-width: 768px) {
+  .nav-left {
+    left: 0;
+  }
+  .nav-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Trong mỗi slide (Carousel.Item), chỉ hiển thị 1 card đầu tiên */
+  .custom-carousel .carousel-item .row > div:nth-child(n+2) {
+    display: none;
+  }
+
+  /* Card đầu tiên chiếm toàn bộ chiều rộng */
+  .custom-carousel .carousel-item .row > div:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Đảm bảo ảnh và card chiếm đúng không gian */
+  .category-card {
+    width: 100%;
+  }
+
+  .category-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Nút điều hướng đẩy vào gần mép */
+  .nav-left {
+    left: 5px !important;
+  }
+
+  .nav-right {
+    right: 5px !important;
+  }
+}

@@ -1,0 +1,32 @@
+/* Thêm vào file CSS chung hoặc tạo file riêng */
+.product-detail-image {
+    max-height: 600px;
+    object-fit: contain;
+    padding: 2rem;
+  }
+  
+  .product-info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .product-info .price h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .product-meta dt {
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .product-meta dd {
+    margin-bottom: 1rem;
+  }

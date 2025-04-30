@@ -1,0 +1,9 @@
+1. Thêm các thay đổi vào staging 
+(git status nếu muốn ktra trạng thái)
+git add .
+
+2. tạo commit mới (bắt buộc)
+git commit -m ""
+
+3. git push
+

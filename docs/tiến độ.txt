@@ -1,0 +1,5 @@
+-ProductGrid vẫn cần nâng cấp thêm
+- thiếu ProductSales (home)
+- thiếu Category trên header
+- thiếu cart , contact ,login
+- thiếu btn đưa về đầu trang
